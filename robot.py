@@ -14,13 +14,9 @@ def type_message(message):
      click(1097,693)
      typewrite(message)
      press("enter")
-     
-
 
 
 def extractText():
-
-     
         # point : 993, 577, 1365, 730
         pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         while True:
@@ -36,32 +32,4 @@ def extractText():
                 sleep(1)
                 model.Core.close_program()
                 break
-
-
-
-                
-                 
-
-           
-    
-
-                
-
-                    
-
-
-                                                                           
-
-            
-
-
 extractText()
-
-
-
-
-
-
-    
-
-
