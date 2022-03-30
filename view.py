@@ -10,7 +10,6 @@ class App(Tk):
         self.geometry("440x180")
         self.resizable(False,False)
 
-
         #setting "ساعت " label
         lbl_hour =Label(self)
         ft = tkFont.Font(family='TAHOMA', size=13)
@@ -98,17 +97,11 @@ class App(Tk):
         def Leave_style(e):
             lbl_made_by["fg"]="blue"
 
-
         lbl_made_by.bind("<Enter>", Enter_style)
         lbl_made_by.bind("<Leave>", Leave_style)
 
-        
-        
-
-
     def btn_active_command(self):
         self.callback2(self.saat.get(),self.daghigh.get())
-        
 
     def btn_exit_command(self):
         self.destroy()
